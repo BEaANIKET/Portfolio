@@ -170,7 +170,6 @@ let skillsScrollAnimation = ()=>{
         let enterPercent = (enterValue / skillsPageHeight) * 100;
         console.log(enterPercent);
 
-        // console.log(enterPercent);
         if(enterPercent>=40){
             if(flag === true){
                 skills_box_item.forEach((element,index)=>{
