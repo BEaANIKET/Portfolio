@@ -21,13 +21,12 @@ menuicon.addEventListener('click',()=>{
 
 
 function firstPageAnime(){
-    console.log("hello");
     let vl = gsap.timeline();
-    vl.to('.hidden2',{
-        y:0,
-        duration:1,
+    vl.from('.text',{
+        x:100,
+        opacity:0,
+        duration:2,
         ease:Expo.easeout,
-        stagger:.3
     })
     vl.from('.imgBottom',{
         opacity:0,
@@ -37,12 +36,13 @@ function firstPageAnime(){
     vl.from('.topmoon',{
         opacity:0,
         duration:3,
-        delay:-2,
+        delay:-3,
     })
     .from('.navitem li',{
         y:-400,
-        duration:1,
+        duration:2,
         delay:-4,
+        color:'red',
         opacity:0,
         stagger:{
             from:'end',
@@ -142,7 +142,7 @@ projectScroll();
 
 // Skills
 let skills_box_item = document.querySelectorAll('.skills-box');
-let score = [90,75,85,76,60,80];
+let score = [90,75,85,76,85,80];
 let skillsLebel = ()=>{
         skills_box_item.forEach((element,index)=>{
         let skills_meter_lebel = element.querySelector('.skills-meter-lebel');

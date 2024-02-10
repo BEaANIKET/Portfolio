@@ -126,7 +126,6 @@ html , body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
     position: relative;
     z-index: 600;
 }
@@ -195,29 +194,30 @@ html , body{
     overflow: hidden;
 }
 .hidden2{
-    transform: translateY(-110%);
+    /* transform: translateY(-110%); */
 }
 
 .circle{
     width:65px;
     height: 65px;
     border-radius: 50%;
-    border: 30px solid white;
+    border: 30px solid rgba(255, 255, 255, 0);
     position: fixed;
     bottom: 2%;
     left: 1%;
-    color: white;
-    background-color: rgba(135, 207, 235, 0.427);
+    color: rgb(255, 255, 255);
+    background-color: rgba(135, 207, 235, 0.308);
     z-index: 900;
 }
 .circle::before{
     content: "Conect";
     position: absolute;
     height: fit-content;
-    left: 2px;
-    top: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     z-index: 800;
-    font-size: 19px;
+    font-size: 12px;
     display: grid;
     place-items: center;
     font-family: "Grape Nuts", cursive;
