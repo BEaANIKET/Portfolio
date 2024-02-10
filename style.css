@@ -21,6 +21,7 @@ html , body{
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .nav{
@@ -162,22 +163,31 @@ html , body{
     border: transparent;
     background-color: transparent;
     background-image: linear-gradient(to right ,rgba(41, 87, 163, 1)  ,rgba(181, 96, 215, 1),rgba(201, 97, 222, 1));
-
-}
-.hero_btn button:nth-child(2){
 }
 .topmoon{
-    position: absolute;
-    left: -4%;
-    top: -11%;
-    z-index: 500;
+  width: 100%;
+  height: 100%;
 }
 .imgBottom {
-   position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+}
+.coverdiv{
+    overflow: hidden;
+    position: absolute;
+}
+#topmoonpic{
+    height: 168px;
+    width: 150px;
+    top: 0;
+    left: 0;
+}
+#bottommoonpic{
+    height: 400px;
+    width: 500px;
     bottom: 0;
-    right: -10%;
-    z-index: 500;
-    width: 670px;
+    right: -0;
 }
 .hidden{
     height: fit-content;
@@ -287,6 +297,19 @@ html , body{
         padding: 0;
         overflow-x: hidden;
     }
+    #bottommoonpic{
+        height: 150px;
+        width: 200px;
+        bottom: 0px;
+    }
+    .imgBottom{
+        margin-left: 50px;
+    }
+    #topmoonpic{
+        height: 100px;
+        width: 100px;
+    }
+  
     .navitem{
         background-color: rgb(119, 98, 164);
         flex-direction: column;
@@ -321,15 +344,10 @@ html , body{
     .text{
         line-height: 2;
     }
-    .imgBottom{
-        width: 60vw;
-    }
-    .topmoon{
-        width: 40vw;
-    }
     .hero_btn button{
         padding: 5px 10px;
     }
+    
 }
 
 /* project  */

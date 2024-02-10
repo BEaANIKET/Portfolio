@@ -73,22 +73,22 @@ function scrollProjectImg(){
     let tl = gsap.timeline({
         scrollTrigger:{
             trigger:'.project',
-            // markers:true,
-            start:"28% 50%",
+            markers:true,
+            start:"28% 43%",
             end:'100% 50%',
             scrub:2,
             pin:true,
         }
     });
     tl.to('#card1', {
-        top: '0%',
+        top: '-3%',
     }, 'a')
     tl.to('#card2', {
         top: '100%',
     }, 'a')
 
     .to('#card2', {
-        top: '3%',
+        top: '0%',
     }, 'b')
     .to('#card1', {
         width:'60%',
@@ -98,7 +98,7 @@ function scrollProjectImg(){
     }, 'b')
 
     .to('#card3', {
-        top: '6%',
+        top: '3%',
     }, 'c')
     .to('#card2', {
         width:'65%',
@@ -108,7 +108,7 @@ function scrollProjectImg(){
     }, 'c')
     
     .to('#card4', {
-        top:'9%',
+        top:'6%',
     }, 'd')
     .to('#card3', {
         width:'66%',
