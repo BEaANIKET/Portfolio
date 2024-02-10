@@ -160,11 +160,14 @@ let screenHeight = window.innerHeight;
 let skillsScrollAnimation = ()=>{
     let flag = true;
     window.addEventListener('scroll',()=>{
+        let skillsPageHeight = skills.getBoundingClientRect().bottom - skills.getBoundingClientRect().top;
         let skillsPageTop = skills.getBoundingClientRect().top;
         let enterValue = screenHeight - skillsPageTop;
-        let enterPercent = (enterValue / screenHeight * 100);
+        let enterPercent = (enterValue / skillsPageHeight) * 100;
         console.log(enterPercent);
-        if(enterPercent>=35){
+
+        // console.log(enterPercent);
+        if(enterPercent>=40){
             if(flag === true){
                 skills_box_item.forEach((element,index)=>{
                     let skills_meter_lebel = element.querySelector('.skills-meter-lebel');
@@ -191,6 +194,9 @@ let skillsScrollAnimation = ()=>{
     })
 }
 skillsScrollAnimation();
+
+
+
 
 // let cheak = ()=>{
 //     let skills = document.querySelector('.skills'); 

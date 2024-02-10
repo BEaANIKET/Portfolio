@@ -342,7 +342,7 @@ body{
 /* project  */
 
 .project{
-    height: 120vh;
+    height: 130vh;
     width: 100%;
     /* background-color: rgb(226, 39, 14); */
     /* background-color: rgb(15, 16, 63); */
@@ -452,7 +452,7 @@ body{
 /* =========> SKILLS <========= */
 
 .skills{
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
     color:rgba(17,20,27,255);
     display: flex;
