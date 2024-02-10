@@ -11,6 +11,15 @@ navitemLi.forEach((element)=>{
     })
 })
 
+let menuicon = document.querySelector('.menuicon');
+let navitem = document.querySelector('.navitem');
+menuicon.addEventListener('click',()=>{
+    menuicon.classList.toggle('rotate');
+    navitem.classList.toggle('none');
+})
+
+
+
 function firstPageAnime(){
     console.log("hello");
     let vl = gsap.timeline();
@@ -72,14 +81,14 @@ function scrollProjectImg(){
         }
     });
     tl.to('#card1', {
-        top: '9%',
+        top: '0%',
     }, 'a')
     tl.to('#card2', {
         top: '100%',
     }, 'a')
 
     .to('#card2', {
-        top: '10%',
+        top: '3%',
     }, 'b')
     .to('#card1', {
         width:'60%',
@@ -89,7 +98,7 @@ function scrollProjectImg(){
     }, 'b')
 
     .to('#card3', {
-        top: '11%',
+        top: '6%',
     }, 'c')
     .to('#card2', {
         width:'65%',
@@ -99,7 +108,7 @@ function scrollProjectImg(){
     }, 'c')
     
     .to('#card4', {
-        top:'12%',
+        top:'9%',
     }, 'd')
     .to('#card3', {
         width:'66%',
@@ -125,3 +134,72 @@ navBg();
 firstPageAnime();
 scrollProjectImg();
 projectScroll();
+
+
+// Skills
+let skills_box_item = document.querySelectorAll('.skills-box');
+let score = [90,75,85,76,60,80];
+let skillsLebel = ()=>{
+        skills_box_item.forEach((element,index)=>{
+        let skills_meter_lebel = element.querySelector('.skills-meter-lebel');
+        let skills_meter_value = score[index];
+        for(let i=0;i<=skills_meter_value;i++){
+            setTimeout(() => {
+                element.querySelector('.skills-meter-value').innerText = `${i}`;
+            }, i*10);
+        }
+        skills_meter_lebel.style.width = `${skills_meter_value}%`;
+    })
+}
+// skillsLebel();
+
+
+let skills = document.querySelector('.skills'); 
+let screenHeight = window.innerHeight;
+
+let skillsScrollAnimation = ()=>{
+    let flag = true;
+    window.addEventListener('scroll',()=>{
+        let skillsPageTop = skills.getBoundingClientRect().top;
+        let enterValue = screenHeight - skillsPageTop;
+        let enterPercent = (enterValue / screenHeight * 100);
+        console.log(enterPercent);
+        if(enterPercent>=35){
+            if(flag === true){
+                skills_box_item.forEach((element,index)=>{
+                    let skills_meter_lebel = element.querySelector('.skills-meter-lebel');
+                    let skills_meter_value = score[index];
+                    for(let i=0;i<=skills_meter_value;i++){
+                        setTimeout(() => {
+                            element.querySelector('.skills-meter-value').innerText = `${i}`;
+                        }, i*10);
+                    }
+                    skills_meter_lebel.style.width = `${skills_meter_value}%`;
+                })
+
+                flag = false;
+            }
+        }
+        else{
+            flag = true;
+            skills_box_item.forEach((element,index)=>{
+                let skills_meter_lebel = element.querySelector('.skills-meter-lebel');
+                element.querySelector('.skills-meter-value').innerText = '0';
+                skills_meter_lebel.style.width = `0%`;
+            })
+        }
+    })
+}
+skillsScrollAnimation();
+
+// let cheak = ()=>{
+//     let skills = document.querySelector('.skills'); 
+//     window.addEventListener('scroll',()=>{
+//         let skillsPageTop = skills.getBoundingClientRect().top;
+//         let enterValue = screenHeight - skillsPageTop;
+//         let enterPercent = (enterValue / screenHeight * 100);
+//         console.log(enterPercent);
+//         console.log(skills.getBoundingClientRect().top);
+//     })
+// }
+// cheak()
