@@ -194,18 +194,3 @@ let skillsScrollAnimation = ()=>{
     })
 }
 skillsScrollAnimation();
-
-
-
-
-// let cheak = ()=>{
-//     let skills = document.querySelector('.skills'); 
-//     window.addEventListener('scroll',()=>{
-//         let skillsPageTop = skills.getBoundingClientRect().top;
-//         let enterValue = screenHeight - skillsPageTop;
-//         let enterPercent = (enterValue / screenHeight * 100);
-//         console.log(enterPercent);
-//         console.log(skills.getBoundingClientRect().top);
-//     })
-// }
-// cheak()
