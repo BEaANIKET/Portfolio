@@ -73,8 +73,8 @@ function scrollProjectImg(){
     let tl = gsap.timeline({
         scrollTrigger:{
             trigger:'.project',
-            markers:true,
-            start:"28% 43%",
+            // markers:true,
+            start:"28% 48%",
             end:'100% 50%',
             scrub:2,
             pin:true,
@@ -85,6 +85,7 @@ function scrollProjectImg(){
     }, 'a')
     tl.to('#card2', {
         top: '100%',
+        width:'100%'
     }, 'a')
 
     .to('#card2', {
@@ -113,6 +114,9 @@ function scrollProjectImg(){
     .to('#card3', {
         width:'66%',
     }, 'd')
+    .to('#card4',{
+        width:'70%'
+    })
 }
 
 function projectScroll(){
