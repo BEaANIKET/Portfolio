@@ -82,6 +82,7 @@ function scrollProjectImg(){
     });
     tl.to('#card1', {
         top: '-3%',
+        width:'100%'
     }, 'a')
     tl.to('#card2', {
         top: '100%',
@@ -92,7 +93,7 @@ function scrollProjectImg(){
         top: '0%',
     }, 'b')
     .to('#card1', {
-        width:'60%',
+        width:'80%',
     }, 'b')
     .to('#card3', {
         top: '100%',
@@ -102,7 +103,7 @@ function scrollProjectImg(){
         top: '3%',
     }, 'c')
     .to('#card2', {
-        width:'65%',
+        width:'82%',
     }, 'c')
     .to('#card4', {
         top:'100%',
@@ -112,10 +113,10 @@ function scrollProjectImg(){
         top:'6%',
     }, 'd')
     .to('#card3', {
-        width:'66%',
+        width:'84%',
     }, 'd')
     .to('#card4',{
-        width:'70%'
+        width:'90%'
     })
 }
 

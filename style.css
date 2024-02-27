@@ -22,6 +22,10 @@ html , body{
     width: 100%;
     overflow-x: hidden;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .nav{
@@ -79,7 +83,7 @@ html , body{
 .menuicon{
     position: relative;
     height: 30px;
-    width: 30px;
+    width: 22px;
     margin-right: 20px;
     transition: all ease .5s;
     display: none;
@@ -92,7 +96,7 @@ html , body{
     position: absolute;
     background-size: cover;
     background-color: rgb(225, 225, 217);
-    height: 5px;
+    height: 2px;
     width: 100%;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -100,10 +104,10 @@ html , body{
     transition: all .5s cubic-bezier(.32,-0.68,.6,1.69);
 }
 #line1{
-    transform: translate(-50%,-12px);
+    transform: translate(-50%,-8px);
 }
 #line3{
-    transform: translate(-50%,7px);
+    transform: translate(-50%,5px);
 }
 .rotate #line1{
     transform: translate(-50%,0) rotate(45deg);
@@ -117,29 +121,61 @@ html , body{
 
 
 .hero{
-    margin-top: 20vh;
     color: white;
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
+    height: min(1000px,70vh);
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 600;
+    width: fit-content;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    mix-blend-mode: color-burn;
+    border-end-end-radius: 70px;
+    /* padding: 200px; */
+}
+.hero-right img{
+    height: 100%;
+    max-height: 350px;
+    border-radius: 30px ;
+    filter: drop-shadow(17px -1px 12px #afafcd);
+    filter:contrast(1.50);
+}
+@media (max-width:950px) {
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero-right img{
+        height: auto;
+        width: min(232px,80vw);
+    }
 }
 .text{
-    font-size: 3vw;
-    line-height: 120px;
+    font-size: 20px;
+    line-height: 70px;
     font-weight: 200;
     font-style: normal;
 }
 .i_am{
-    font-size:3vw ;
+    font-size:30px ;
 }
 .name{
-    font-size: 6vw;
+    font-size: 70px;
     font-weight: 200;
 }
 .about_abouttext{
@@ -289,6 +325,9 @@ html , body{
     .name{
         font-size: 10vw;
     }
+    .i_am{
+        font-size:5vw ;
+    }
 }
 @media (max-width:650px) {
     html , body{
@@ -334,18 +373,19 @@ html , body{
     .none{
         transform: translateY(-100%);
     }
-    .hero{
-        margin-top: 150px;
-    }
     .about_abouttext{
         line-height: 1;
         font-size: 5vw;
     }
+  
     .text{
         line-height: 2;
     }
     .hero_btn button{
         padding: 5px 10px;
+    }
+    .circle{
+        display: none;
     }
     
 }
@@ -394,21 +434,17 @@ html , body{
 }
 
 #card1{
-    background-image: url(assets/cakeweb.png);
+    background-image: url(assets/renthouse.png);
     top: 110%;
 } 
 #card2{
-    background-image: url(assets/musicplayer.png);
+    background-image: url(assets/cakeweb.png);
     top: 110%;
 }
 #card3{
     background-image: url(assets/tic.png);
     top: 110%;
 }
-#card4{
-    background-image: url(assets/rps.png);
-    top: 110%;
-} 
 .cardtext{
     width: 100%;
     height: 100%;
