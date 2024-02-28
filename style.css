@@ -15,8 +15,16 @@ html , body{
 }
 .container{
     background-color: rgb(15, 16, 63);
+    /* background-color:white; */
     width: 100%;
+    color: white;
 }
+
+.mode{
+    background-color: black;
+    color: white;
+}
+
 .main{
     height: 100vh;
     width: 100%;
@@ -35,14 +43,26 @@ html , body{
     top: 0;
     width: 100%;
     height: 70px;
-    color: white;
     list-style: none;
     justify-content: space-between;
     align-items: center;
     font-weight: 200;
     font-style: normal;
 }
-
+.modelogo{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 35px;
+    background-color: transparent;
+    z-index: 300;
+}
+.modelogo img{
+    height: 100%;
+    width: 100%;
+}
 .logo{
     width: 100px;
     height: 40px;
@@ -59,6 +79,7 @@ html , body{
     font-size: 18px;
     margin-right: 20px;
     transition: all ease .5s;
+    color: white;
 }
 .navitem li{
     position: relative;
@@ -88,6 +109,7 @@ html , body{
     margin-right: 20px;
     transition: all ease .5s;
     display: none;
+    z-index: 999;
 }
 .menuicon:hover{
     transform: rotate(90deg);
@@ -96,13 +118,16 @@ html , body{
 .menuicon-line{
     position: absolute;
     background-size: cover;
-    background-color: rgb(225, 225, 217);
     height: 2px;
     width: 100%;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
+    background-color: white;
     transition: all .5s cubic-bezier(.32,-0.68,.6,1.69);
+}
+.bg-white{
+    background-color: white;
 }
 #line1{
     transform: translate(-50%,-8px);
@@ -122,7 +147,7 @@ html , body{
 
 
 .hero{
-    color: white;
+    /* color: white; */
     height: min(1000px,70vh);
     margin: auto;
     display: flex;
@@ -153,8 +178,7 @@ html , body{
 .hero-right img{
     height: min(500px,100%);
     border-radius: 30px ;
-    filter: drop-shadow(17px -1px 12px #afafcd);
-    filter:contrast(1.50);
+    filter: drop-shadow(17px -1px 12px #5c5cd7);
 }
 @media (max-width:950px) {
     .hero{
@@ -175,7 +199,7 @@ html , body{
     font-size:30px ;
 }
 .name{
-    font-size: min(6vw,100px);
+    font-size: min(6vw,88px);
     font-weight: 200;
 }
 .about_abouttext{
@@ -223,25 +247,22 @@ html , body{
     width: 500px;
     bottom: 0;
     right: -0;
+    z-index: 800;
 }
 .hidden{
     height: fit-content;
     width: fit-content;
     overflow: hidden;
 }
-.hidden2{
-    /* transform: translateY(-110%); */
-}
 
 .circle{
     width:65px;
     height: 65px;
     border-radius: 50%;
-    border: 30px solid rgba(255, 255, 255, 0);
+    border: 30px solid rgba(255, 255, 255, 0.919);
     position: fixed;
     bottom: 2%;
     left: 1%;
-    color: rgb(255, 255, 255);
     background-color: rgba(135, 207, 235, 0.308);
     z-index: 900;
 }
@@ -276,9 +297,11 @@ html , body{
     animation: rotateanime 4s reverse linear infinite;
 
 }
+
 .innercircle_img1{
     left: -30px;
   top: 16px;
+  color: white;
   
 }
 .innercircle_img2{
@@ -353,7 +376,6 @@ html , body{
         background-color: rgb(119, 98, 164);
         flex-direction: column;
         gap: 20px;
-        color: black;
         position: absolute;
         top: 0;
         height: fit-content;
@@ -361,6 +383,7 @@ html , body{
         align-items: center;
         padding-bottom: 40px;
         padding-top: 20px;
+        z-index: 900;
         
     }
     .navitem li{
@@ -468,7 +491,6 @@ html , body{
     font-size:20px;
     border-radius: 20px;
     border: transparent;
-    color: white
 }
 .card_buttom button:hover{
     box-shadow: 2px 2px 3px black;
@@ -511,11 +533,10 @@ html , body{
 .skills{
     height: 100vh;
     width: 100%;
-    color:rgba(17,20,27,255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fdfdfd;
+
 }
 .skills h1{
     font-size: 50px;
@@ -578,7 +599,6 @@ html , body{
     height: 8px;
     border-radius: 30px;
     overflow:hidden ;
-    background-color:#edeeec;
 }
 
 .skills-meter-lebel{

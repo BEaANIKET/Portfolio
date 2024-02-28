@@ -1,6 +1,9 @@
 
 gsap.registerPlugin('scrollTrigger');
 
+let displayMode = 'day';
+
+
 let navitemLi = document.querySelector('.navitem').querySelectorAll('li');
 let navLinkNo = 0;
 navitemLi[0].querySelector('.line').style.width = '100%';
@@ -10,6 +13,19 @@ let eraseAllLine = (value)=>{
             item.querySelector('.line').style.width = '0%';
     })
 }
+
+let mode = document.querySelector('.modeimg');
+mode.setAttribute('src',`Assets/${displayMode}.png`);
+
+mode.addEventListener('click',()=>{
+    displayMode = displayMode === 'day' ? 'neight' : 'day';
+    mode.setAttribute('src',`Assets/${displayMode}.png`)  
+    document.querySelector('.container').classList.toggle('mode');
+    document.querySelectorAll('.skills-meter').forEach((item)=>{
+        item.classList.toggle('bg-white');
+    })
+
+})
 
 navitemLi.forEach((element,index)=>{
     element.addEventListener('mouseenter' , ()=>{
@@ -113,6 +129,7 @@ function scrollProjectImg(){
     }, 'b')
     .to('#card3', {
         top: '100%',
+        width:'100%'
     }, 'b')
 
     .to('#card3', {
@@ -121,19 +138,9 @@ function scrollProjectImg(){
     .to('#card2', {
         width:'82%',
     }, 'c')
-    .to('#card4', {
-        top:'100%',
-    }, 'c')
-    
-    .to('#card4', {
-        top:'6%',
-    }, 'd')
     .to('#card3', {
         width:'84%',
     }, 'd')
-    .to('#card4',{
-        width:'90%'
-    })
 }
 
 function projectScroll(){
