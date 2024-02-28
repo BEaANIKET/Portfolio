@@ -2,12 +2,28 @@
 gsap.registerPlugin('scrollTrigger');
 
 let navitemLi = document.querySelector('.navitem').querySelectorAll('li');
-navitemLi.forEach((element)=>{
+let navLinkNo = 0;
+navitemLi[0].querySelector('.line').style.width = '100%';
+let eraseAllLine = (value)=>{
+    navitemLi.forEach((item,index)=>{
+        if(index!=value)
+            item.querySelector('.line').style.width = '0%';
+    })
+}
+
+navitemLi.forEach((element,index)=>{
     element.addEventListener('mouseenter' , ()=>{
+        eraseAllLine(navLinkNo);
         element.querySelector('.line').style.width = '100%';
     })
     element.addEventListener('mouseleave' , ()=>{
-        element.querySelector('.line').style.width = '0%';
+        if(navLinkNo != index)
+            element.querySelector('.line').style.width = '0%';
+    })
+    element.addEventListener('click' , ()=>{
+        navLinkNo = index
+        eraseAllLine(navLinkNo);
+        element.querySelector('.line').style.width = '100%';
     })
 })
 

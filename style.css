@@ -69,6 +69,7 @@ html , body{
     transition:all .3s ease;
 }
 
+
 .line::before{
     content: "";
     height: 4px;
@@ -107,7 +108,7 @@ html , body{
     transform: translate(-50%,-8px);
 }
 #line3{
-    transform: translate(-50%,5px);
+    transform: translate(-50%,6px);
 }
 .rotate #line1{
     transform: translate(-50%,0) rotate(45deg);
@@ -150,8 +151,7 @@ html , body{
     /* padding: 200px; */
 }
 .hero-right img{
-    height: 100%;
-    max-height: 350px;
+    height: min(500px,100%);
     border-radius: 30px ;
     filter: drop-shadow(17px -1px 12px #afafcd);
     filter:contrast(1.50);
@@ -162,11 +162,11 @@ html , body{
     }
     .hero-right img{
         height: auto;
-        width: min(232px,80vw);
+        width: min(245px,80vw);
     }
 }
 .text{
-    font-size: 20px;
+    font-size: 26px;
     line-height: 70px;
     font-weight: 200;
     font-style: normal;
@@ -175,11 +175,11 @@ html , body{
     font-size:30px ;
 }
 .name{
-    font-size: 70px;
+    font-size: min(6vw,100px);
     font-weight: 200;
 }
 .about_abouttext{
-    line-height: 48px;
+    line-height: 20px;
 }
 
 .hero_btn{
