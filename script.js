@@ -1,6 +1,14 @@
 
 gsap.registerPlugin('scrollTrigger');
 
+const type = new Typed(".autotype" , {
+    strings:['ANIKET CHATURVEDI' , 'FREELANCER' , 'UI/UX DESIGNER' ,'FRONTEND DEVELOPER'],
+    typespeed:150,
+    backspeed:150,
+    loop:true,
+})
+
+
 let displayMode = 'day';
 
 
