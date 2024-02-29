@@ -439,7 +439,7 @@ html , body{
 /* project  */
 
 .project{
-    height: 130vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -632,6 +632,7 @@ html , body{
     margin-right: 10px;
     font-weight: 600;
 }
+
 @media (max-width:1120px) {
     html , body{
         width: 100%;
