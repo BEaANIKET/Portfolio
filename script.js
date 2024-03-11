@@ -9,7 +9,7 @@ const type = new Typed(".autotype" , {
 })
 
 
-let displayMode = 'day';
+let displayMode = 'neight';
 
 
 let navitemLi = document.querySelector('.navitem').querySelectorAll('li');
