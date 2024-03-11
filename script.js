@@ -22,17 +22,26 @@ let eraseAllLine = (value)=>{
     })
 }
 
-let mode = document.querySelector('.modeimg');
-mode.setAttribute('src',`Assets/${displayMode}.png`);
+document.querySelector('.day').style.display = 'none';
+document.querySelector('.neight').style.display = 'block';
+let mode = document.querySelector('.modelogo');
 
 mode.addEventListener('click',()=>{
-    displayMode = displayMode === 'day' ? 'neight' : 'day';
-    mode.setAttribute('src',`Assets/${displayMode}.png`)  
+    console.log(displayMode);
     document.querySelector('.container').classList.toggle('mode');
     document.querySelectorAll('.skills-meter').forEach((item)=>{
         item.classList.toggle('bg-white');
     })
-
+    
+    if (displayMode === 'day') {
+        document.querySelector('.day').style.display = 'none';
+        document.querySelector('.neight').style.display = 'block';
+    } else {
+        document.querySelector('.day').style.display = 'block';
+        document.querySelector('.neight').style.display = 'none';
+    }
+    
+    displayMode = displayMode === 'day' ? 'neight' : 'day';
 })
 
 navitemLi.forEach((element,index)=>{
