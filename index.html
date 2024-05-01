@@ -1,210 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     
-    <div class="terminal-loader Loder ">
-        <div class="terminal-header">
-          <div class="terminal-title">Status</div>
-          <div class="terminal-controls">
-            <div class="control close"></div>
-            <div class="control minimize"></div>
-            <div class="control maximize"></div>
-          </div>
-        </div>
-        <div class="textl">Loading...</div>
+    <div class="Loder">
+      <div class="dot-spinner">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
       </div>
-
-      
-    <div class="container erase">
-        <div class="nav">
-            <div class="logo">
-                <img src="assets/aniketlogo.png" alt="">
-            </div>
-            <div class="navitem none ">
-                <li><a style="text-decoration: none; color: white;" href="">HOME</a> <div class="line"></div></li>
-                <li><a style="text-decoration: none; color: white;" href="#project">PROJECT</a>  <div class="line"></div></li>
-                <li><a style="text-decoration: none; color: white;" href="#skills">SKILLS</a>  <div class="line"></div></li>
-                <li><a style="text-decoration: none; color: white;" href="">ABOUT</a>  <div class="line"></div></li>
-                <li><a style="text-decoration: none; color: white;" href="">PORTFOLIO</a>  <div class="line"></div></li>
-            </div>
-            <div class="menuicon">
-                <span class="menuicon-line" id="line1"></span>
-                <span class="menuicon-line" id="line2"></span>
-                <span class="menuicon-line" id="line3"></span>
-            </div>
-            <div class="modelogo">
-                <img  class="modeimg neight" src="assets/neight.png" alt="">
-                <img  class="modeimg day" src="assets/day.png" alt="">
-            </div>
-        </div>
-        <div class="main">
-            <div class="hero">
-                <div class="hero-left">
-                    <div class="text">
-                        <div class="hidden">
-                            <h1 class="name hidden2"> <span class="i_am">I am </span><br> <span class="autotype"></span></h1>
-                        </div>
-                       <div class="about_abouttext">
-                            <div class="hidden">
-                                <h5 class="hidden2">rafting unforgettable digital journeys. With precision and passion,I turn ideas into immersive experiences. Explore my work and let's bring your vision to life.</h5>
-                            </div>
-                            <div class="hidden">
-                                <h5 class="hidden2"> </h5>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="hero_btn">
-                        <a target="_blank" href=""><button>Hire Me</button></a>
-                        <a target="_blank" href="assets/Aniket_Chaturvedi_resume.pdf"><button>Download cv</button></a>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <img src="assets/ANIKET2.png" alt="">
-                </div>
-            </div>
-            <div class="coverdiv" id="topmoonpic">
-                <img class="topmoon" src="assets/topmoon.png" alt="">
-            </div>
-            <div class="coverdiv" id="bottommoonpic">
-                <img class="imgBottom" src="assets/bottommoon.png" alt="">
-            </div>
-            <div class="social">
-                <div class="img1"><a target="_blank" href="https://www.instagram.com/be_a_aniket_/"><img src="./assets/insta.png" alt=""></a></div>
-                <div class="img2"><a target="_blank" href="https://twitter.com/BE_A_ANIKEY"><img src="./assets/tweeter.png" alt=""></a></div>
-                <div class="img3"><a target="_blank" href="https://api.whatsapp.com/send?phone=9031437306"><img src="./assets/whatshapp.png" alt=""></a></div>
-                <div class="img4"><a target="_blank" href="mailto: aniketchaturvedi@gmail.com"><img src="./assets/email.png" alt=""></a></div>
-            </div>
-            <div class="circle">
-                <div class="innercircle">
-                    <a target="_blank" href="mailto: aniketchaturvedi@gmail.com" href=""><img class="innercircle_img1 innercircle_img" src="assets/email.png" alt=""></a>
-                    <a target="_blank" href="https://www.instagram.com/be_a_aniket_/"><img class="innercircle_img2 innercircle_img" src="assets/insta.png" alt=""></a>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=9031437306"><img class="innercircle_img3 innercircle_img" src="assets/whatshapp.png" alt=""></a>
-                    <a target="_blank" href="https://twitter.com/BE_A_ANIKEY"><img class="innercircle_img4 innercircle_img" src="assets/tweeter.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project" id="project">
-            <h1 class="project_h1">PROJECT</h1>
-            <div class="allcard">
-                <div class="card" id="card1">
-                    <div class="cardtext">
-                        <div class="card_buttom">
-                            <a target="_blank" href="https://github.com/BEaANIKET/RentHomes"><button>Github</button></a>
-                            <a target="_blank" href="https://renthomesbook.vercel.app/"><button>Live</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card2">
-                    <div class="cardtext">
-                        <div class="card_buttom">
-                            <a target="_blank" href="https://github.com/BEaANIKET/Cake-Shop-Website"><button>Github</button></a>
-                            <a target="_blank" href="https://beaaniket.github.io/Cake-Shop-Website/"><button>Live</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card3">
-                    <div class="cardtext">
-                        <div class="card_buttom">
-                            <a target="_blank" href="https://github.com/BEaANIKET/Tic-Tak-Toe"><button>Github</button></a>
-                            <a target="_blank" href="https://beaaniket.github.io/Tic-Tak-Toe/"><button>Live</button></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="skills" id="skills">
-            <h1>SKILLS</h1>
-            <hr>
-            <p>Strong understanding of cross-browser compatibility and accessibility standards to ensure the  best user experience across different devices and platforms.</p>
-            <div class="skills-item">
-                <div class="skills-left">
-                    <div class="skills-box">
-                        <div class="skills-top">
-                            <h4>HTML</h4>
-                            <div class="skills-meter-value">90</div>
-                        </div>
-                        <div class="skills-box-item">
-                            <div class="skills-meter">
-                                <div class="skills-meter-lebel"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-top">
-                            <h4>CSS</h4>
-                            <div class="skills-meter-value">75</div>
-                        </div>
-                        <div class="skills-box-item">
-                            <div class="skills-meter">
-                                <div class="skills-meter-lebel"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-top">
-                            <h4>Javascript</h4>
-                            <div class="skills-meter-value">85</div>
-                        </div>                        <div class="skills-box-item">
-                            <div class="skills-meter">
-                                <div class="skills-meter-lebel"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-left skills-right">
-                    <div class="skills-box">
-                        <div class="skills-top">
-                            <h4>React js</h4>
-                            <div class="skills-meter-value">76</div>
-                        </div>
-                        <div class="skills-box-item">
-                            <div class="skills-meter">
-                                <div class="skills-meter-lebel"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-top">
-                            <h4>C++</h4>
-                            <div class="skills-meter-value">60</div>
-                        </div>
-                        <div class="skills-box-item">
-                            <div class="skills-meter">
-                                <div class="skills-meter-lebel"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-top">
-                            <h4>Github</h4>
-                            <div class="skills-meter-value">80</div>
-                        </div>
-                        <div class="skills-box-item">
-                            <div class="skills-meter">
-                                <div class="skills-meter-lebel"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <div class="container erase">
+      <div class="nav">
+        <div class="logo">
+          <img src="assets/aniketlogo.png" alt="" />
+        </div>
+        <div class="navitem none">
+          <li>
+            <a style="text-decoration: none; color: white" href="">HOME</a>
+            <div class="line"></div>
+          </li>
+          <li>
+            <a style="text-decoration: none; color: white" href="#project"
+              >PROJECT</a
+            >
+            <div class="line"></div>
+          </li>
+          <li>
+            <a style="text-decoration: none; color: white" href="#skills"
+              >SKILLS</a
+            >
+            <div class="line"></div>
+          </li>
+          <li>
+            <a style="text-decoration: none; color: white" href="">ABOUT</a>
+            <div class="line"></div>
+          </li>
+          <li>
+            <a style="text-decoration: none; color: white" href="">PORTFOLIO</a>
+            <div class="line"></div>
+          </li>
+        </div>
+        <div class="menuicon">
+          <span class="menuicon-line" id="line1"></span>
+          <span class="menuicon-line" id="line2"></span>
+          <span class="menuicon-line" id="line3"></span>
+        </div>
+        <div class="modelogo">
+          <img class="modeimg neight" src="assets/neight.png" alt="" />
+          <img class="modeimg day" src="assets/day.png" alt="" />
+        </div>
+      </div>
+      <div class="main">
+        <div class="hero">
+          <div class="hero-left">
+            <div class="text">
+              <div class="hidden">
+                <h1 class="name hidden2">
+                  <span class="i_am">I am </span><br />
+                  <span class="autotype"></span>
+                </h1>
+              </div>
+              <div class="about_abouttext">
+                <div class="hidden">
+                  <h5 class="hidden2">
+                    rafting unforgettable digital journeys. With precision and
+                    passion,I turn ideas into immersive experiences. Explore my
+                    work and let's bring your vision to life.
+                  </h5>
+                </div>
+                <div class="hidden">
+                  <h5 class="hidden2"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="hero_btn">
+              <a target="_blank" href=""><button>Hire Me</button></a>
+              <a target="_blank" href="assets/Aniket_Chaturvedi_resume.pdf"
+                ><button>Download cv</button></a
+              >
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="assets/ANIKET2.png" alt="" />
+          </div>
+        </div>
+        <div class="coverdiv" id="topmoonpic">
+          <img class="topmoon" src="assets/topmoon.png" alt="" />
+        </div>
+        <div class="coverdiv" id="bottommoonpic">
+          <img class="imgBottom" src="assets/bottommoon.png" alt="" />
+        </div>
+        <div class="social">
+          <div class="img1">
+            <a target="_blank" href="https://www.instagram.com/be_a_aniket_/"
+              ><img src="./assets/insta.png" alt=""
+            /></a>
+          </div>
+          <div class="img2">
+            <a target="_blank" href="https://twitter.com/BE_A_ANIKEY"
+              ><img src="./assets/tweeter.png" alt=""
+            /></a>
+          </div>
+          <div class="img3">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=9031437306"
+              ><img src="./assets/whatshapp.png" alt=""
+            /></a>
+          </div>
+          <div class="img4">
+            <a target="_blank" href="mailto: aniketchaturvedi@gmail.com"
+              ><img src="./assets/email.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="innercircle">
+            <a target="_blank" href="mailto: aniketchaturvedi@gmail.com" href=""
+              ><img
+                class="innercircle_img1 innercircle_img"
+                src="assets/email.png"
+                alt=""
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/be_a_aniket_/"
+              ><img
+                class="innercircle_img2 innercircle_img"
+                src="assets/insta.png"
+                alt=""
+            /></a>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=9031437306"
+              ><img
+                class="innercircle_img3 innercircle_img"
+                src="assets/whatshapp.png"
+                alt=""
+            /></a>
+            <a target="_blank" href="https://twitter.com/BE_A_ANIKEY"
+              ><img
+                class="innercircle_img4 innercircle_img"
+                src="assets/tweeter.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
 
-</body>
+      <div class="project" id="project">
+        <h1 class="project_h1">PROJECT</h1>
+        <div class="allcard">
+          <div class="card" id="card1">
+            <div class="cardtext">
+              <div class="card_buttom">
+                <a target="_blank" href="https://github.com/BEaANIKET/RentHomes"
+                  ><button>Github</button></a
+                >
+                <a target="_blank" href="https://renthomesbook.vercel.app/"
+                  ><button>Live</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <div class="cardtext">
+              <div class="card_buttom">
+                <a
+                  target="_blank"
+                  href="https://github.com/BEaANIKET/Cake-Shop-Website"
+                  ><button>Github</button></a
+                >
+                <a
+                  target="_blank"
+                  href="https://beaaniket.github.io/Cake-Shop-Website/"
+                  ><button>Live</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div class="cardtext">
+              <div class="card_buttom">
+                <a
+                  target="_blank"
+                  href="https://github.com/BEaANIKET/Tic-Tak-Toe"
+                  ><button>Github</button></a
+                >
+                <a
+                  target="_blank"
+                  href="https://beaaniket.github.io/Tic-Tak-Toe/"
+                  ><button>Live</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills" id="skills">
+        <h1>SKILLS</h1>
+        <hr />
+        <p>
+          Strong understanding of cross-browser compatibility and accessibility
+          standards to ensure the best user experience across different devices
+          and platforms.
+        </p>
+        <div class="skills-item">
+          <div class="skills-left">
+            <div class="skills-box">
+              <div class="skills-top">
+                <h4>HTML</h4>
+                <div class="skills-meter-value">90</div>
+              </div>
+              <div class="skills-box-item">
+                <div class="skills-meter">
+                  <div class="skills-meter-lebel"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-top">
+                <h4>CSS</h4>
+                <div class="skills-meter-value">75</div>
+              </div>
+              <div class="skills-box-item">
+                <div class="skills-meter">
+                  <div class="skills-meter-lebel"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-top">
+                <h4>Javascript</h4>
+                <div class="skills-meter-value">85</div>
+              </div>
+              <div class="skills-box-item">
+                <div class="skills-meter">
+                  <div class="skills-meter-lebel"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-left skills-right">
+            <div class="skills-box">
+              <div class="skills-top">
+                <h4>React js</h4>
+                <div class="skills-meter-value">76</div>
+              </div>
+              <div class="skills-box-item">
+                <div class="skills-meter">
+                  <div class="skills-meter-lebel"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-top">
+                <h4>C++</h4>
+                <div class="skills-meter-value">60</div>
+              </div>
+              <div class="skills-box-item">
+                <div class="skills-meter">
+                  <div class="skills-meter-lebel"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-top">
+                <h4>Github</h4>
+                <div class="skills-meter-value">80</div>
+              </div>
+              <div class="skills-box-item">
+                <div class="skills-meter">
+                  <div class="skills-meter-lebel"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
