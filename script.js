@@ -1,6 +1,15 @@
 
 gsap.registerPlugin('scrollTrigger');
 
+
+
+const Loder = function (){
+    document.querySelector('.Loder').classList.add('erase');
+    document.querySelector('.container').classList.remove('erase');
+}
+Loder();
+
+
 const type = new Typed(".autotype" , {
     strings:['ANIKET CHATURVEDI' , 'FREELANCER' , 'UI/UX DESIGNER' ,'FRONTEND DEVELOPER'],
     typespeed:150,
