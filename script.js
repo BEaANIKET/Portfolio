@@ -18,7 +18,7 @@ const type = new Typed(".autotype" , {
 })
 
 
-let displayMode = 'neight';
+// let displayMode = 'neight';
 
 
 let navitemLi = document.querySelector('.navitem').querySelectorAll('li');
@@ -31,27 +31,27 @@ let eraseAllLine = (value)=>{
     })
 }
 
-document.querySelector('.day').style.display = 'none';
-document.querySelector('.neight').style.display = 'block';
-let mode = document.querySelector('.modelogo');
+// document.querySelector('.day').style.display = 'none';
+// document.querySelector('.neight').style.display = 'block';
+// let mode = document.querySelector('.modelogo');
 
-mode.addEventListener('click',()=>{
-    console.log(displayMode);
-    document.querySelector('.container').classList.toggle('mode');
-    document.querySelectorAll('.skills-meter').forEach((item)=>{
-        item.classList.toggle('bg-white');
-    })
+// mode.addEventListener('click',()=>{
+//     console.log(displayMode);
+//     document.querySelector('.container').classList.toggle('mode');
+//     document.querySelectorAll('.skills-meter').forEach((item)=>{
+//         item.classList.toggle('bg-white');
+//     })
     
-    if (displayMode === 'day') {
-        document.querySelector('.day').style.display = 'none';
-        document.querySelector('.neight').style.display = 'block';
-    } else {
-        document.querySelector('.day').style.display = 'block';
-        document.querySelector('.neight').style.display = 'none';
-    }
+//     if (displayMode === 'day') {
+//         document.querySelector('.day').style.display = 'none';
+//         document.querySelector('.neight').style.display = 'block';
+//     } else {
+//         document.querySelector('.day').style.display = 'block';
+//         document.querySelector('.neight').style.display = 'none';
+//     }
     
-    displayMode = displayMode === 'day' ? 'neight' : 'day';
-})
+//     displayMode = displayMode === 'day' ? 'neight' : 'day';
+// })
 
 navitemLi.forEach((element,index)=>{
     element.addEventListener('mouseenter' , ()=>{
@@ -113,14 +113,14 @@ function navBg(){
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.main',  
-            start: '100% 70%',
+            start: '100% 100%',
             // markers:true,
             end: '100% 70%',
             scrub: 2
         },
     });
     tl.to('.nav' ,{
-        backgroundColor:' rgba(15, 16, 63, 1)',
+        backgroundColor:'black',
         duration:.1,
     })
 
