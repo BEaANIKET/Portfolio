@@ -12,7 +12,7 @@ Loder();
 
 const type = new Typed(".autotype" , {
     strings:['ANIKET CHATURVEDI' , 'FREELANCER' , 'UI/UX DESIGNER' ,'FRONTEND DEVELOPER'],
-    typespeed:150,
+    typespeed:100,
     backspeed:150,
     loop:true,
 })
