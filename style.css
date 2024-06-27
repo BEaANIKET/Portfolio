@@ -199,7 +199,6 @@ body {
 .autotype {
   font-weight: 300;
   font-style: normal;
-  font-family: "Caveat", cursive;
 }
 .hero-right img {
   height: min(500px, 100%);
@@ -534,15 +533,15 @@ body {
 }
 
 #card1 {
-  background-image: url(assets/renthouse.png);
+  background-image: url(assets/socialApp.gif);
   top: 110%;
 }
 #card2 {
-  background-image: url(assets/cakeweb.png);
+  background-image: url(assets/movieproject.gif);
   top: 110%;
 }
 #card3 {
-  background-image: url(assets/tic.png);
+  background-image: url(assets/renthouse.png);
   top: 110%;
 }
 .cardtext {
